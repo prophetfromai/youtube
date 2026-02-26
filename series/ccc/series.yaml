@@ -1,0 +1,5 @@
+title: "Claude Code Controller — Remote Control for Claude Code"
+description: "Building and deploying CCC, a Telegram-based remote control for Claude Code that uses safe polling instead of exposing your machine to inbound connections."
+source_repo: https://github.com/kidandcat/ccc
+status: active
+episodes: 8

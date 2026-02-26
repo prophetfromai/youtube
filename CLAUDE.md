@@ -1,21 +1,43 @@
-# {Project Name}
+# YouTube
 
 @/Users/qualitydrivensoftwareltd/git/claude.md/CLAUDE.md
 
 ## What This Project Is
 
-{One sentence: what it does and who it's for.}
+Content planning and scripts for the ProphetFromAI YouTube channel — developer-focused video series showing real builds, tools, and workflows.
 
 ## Summary
 
-{A few paragraphs capturing the vision, scope, and intent of this project. What problem does it solve? Who is it for? What does the MVP look like? What's the longer-term direction? This section gives any future session (or person) the full picture without having to ask.}
+This repo is the single source of truth for all YouTube content. Each series lives in its own folder under `series/`, with one markdown file per episode containing the outline, script, key points, and metadata. The top-level `series.yaml` is the registry of all series and episodes — same pattern as `repos.yaml` in director.
+
+**No product code lives here** — only content planning, scripts, and notes. Code for projects featured in videos lives in their own repos.
+
+**First series:** Implementing [CCC (Claude Code Controller)](https://github.com/kidandcat/ccc) — a Telegram-based remote control for Claude Code that uses safe polling instead of exposing your machine to inbound connections.
+
+## Structure
+
+```
+series.yaml              # registry of all series + episodes (source of truth)
+templates/episode.md     # skeleton for new episodes
+series/
+  <series-name>/
+    series.yaml           # series-level metadata
+    001-<slug>.md         # one file per episode
+```
+
+## Workflow
+
+**New series:** Create a folder under `series/`, add a `series.yaml` inside it, plan episodes as numbered markdown files, register everything in the top-level `series.yaml`.
+
+**New episode:** Copy `templates/episode.md`, fill in the frontmatter and outline, add the entry to the top-level `series.yaml`.
+
+**Episode statuses:** `idea` → `outlining` → `scripting` → `recorded` → `editing` → `published`
 
 ## Commands
 
 ```bash
-npm run dev        # local dev server
-npm run build      # production build
-npm run deploy     # deploy to Firebase
+# No build commands — this is a content repo
+# Use grep/search to find episodes by status, topic, etc.
 ```
 
 ## Monologue
@@ -34,7 +56,3 @@ npm run deploy     # deploy to Firebase
 Only capture signal: ideas, shifts in direction, decisions. Skip routine implementation chatter.
 
 For the portfolio-level monologue (cross-product ideas and themes), see `/Users/qualitydrivensoftwareltd/git/director/monologue.md`.
-
-## Project-Specific Rules
-
-{Architecture decisions, conventions, or constraints that only apply to this project. Delete this section if there are none yet — add rules as they emerge.}

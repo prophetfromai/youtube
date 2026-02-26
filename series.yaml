@@ -1,0 +1,69 @@
+# YouTube Content Registry
+# Single source of truth for all series and episodes.
+
+series:
+  - id: ccc
+    title: "Claude Code Controller — Remote Control for Claude Code"
+    description: "Building and deploying CCC, a Telegram-based remote control for Claude Code that uses safe polling instead of exposing your machine to inbound connections."
+    playlist_url: ""
+    status: active
+    folder: series/ccc
+
+episodes:
+  # --- CCC Series ---
+
+  - id: ccc-001
+    series: ccc
+    title: "Why CCC? Remote Claude Code Without the Risk"
+    status: outlining
+    youtube_url: ""
+    duration_target: "10-12 min"
+
+  - id: ccc-002
+    series: ccc
+    title: "Setup from Scratch — Bot, Install, First Session"
+    status: idea
+    youtube_url: ""
+    duration_target: "12-15 min"
+
+  - id: ccc-003
+    series: ccc
+    title: "How It Actually Works — Polling, Hooks & tmux"
+    status: idea
+    youtube_url: ""
+    duration_target: "10-12 min"
+
+  - id: ccc-004
+    series: ccc
+    title: "Daily Driver — Real Workflow from Your Phone"
+    status: idea
+    youtube_url: ""
+    duration_target: "8-10 min"
+
+  - id: ccc-005
+    series: ccc
+    title: "Locking It Down — OTP Mode & Permission Control"
+    status: idea
+    youtube_url: ""
+    duration_target: "8-10 min"
+
+  - id: ccc-006
+    series: ccc
+    title: "Voice, Images & File Transfer — The Extras"
+    status: idea
+    youtube_url: ""
+    duration_target: "8-10 min"
+
+  - id: ccc-007
+    series: ccc
+    title: "Always On — Running CCC as a Background Service"
+    status: idea
+    youtube_url: ""
+    duration_target: "6-8 min"
+
+  - id: ccc-008
+    series: ccc
+    title: "Under the Hood — Reading the Go Codebase"
+    status: idea
+    youtube_url: ""
+    duration_target: "12-15 min"
